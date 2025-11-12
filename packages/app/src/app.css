@@ -1,0 +1,55 @@
+.nav-item a {
+    color: #000;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar {
+    list-style: none;
+}
+
+/* Estilo para o Navbar colapsado */
+.navbar-collapse {
+    background-color: #f8f9fa; /* Cor de fundo padrão */
+    z-index: 1000; /* Certifica que está acima do conteúdo da página */
+}
+
+/* Estilo para links do Navbar */
+.nav-link {
+    padding: 10px 15px;
+    display: block; /* Links ocupam o espaço inteiro */
+    text-align: center;
+}
+
+/* Ajuste de transição para a navegação */
+.navbar-collapse.collapsing {
+    transition: height 0.3s ease;
+}
+
+/* Previne sobreposição do conteúdo principal */
+main {
+    margin-top: 56px; /* Altura da navbar */
+}
+
+/* Background do menu em dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 56px; /* Alinhado logo abaixo da navbar */
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um sombreamento sutil */
+    }
+}
